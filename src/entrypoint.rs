@@ -11,7 +11,7 @@ fn process_instruction(
     accounts: &[AccountInfo], // All accounts required to process the instruction
     instruction_data: &[u8],  // Serialized instruction-specific data
 ) -> ProgramResult {
-    Processor::process(program_id, accounts, instruction_data);
+    Processor::process(program_id, accounts, instruction_data)?;
 
     Ok(())
 }

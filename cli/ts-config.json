@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+      "types": ["mocha", "node"],
+      "typeRoots": ["./node_modules/@types"],
+      "lib": ["es2015"],
+      "module": "commonjs",
+      "target": "es6",
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "paths": {
+        "@solana/spl-token": ["./node_modules/@solana/spl-token"]
+      },
+      "skipLibCheck": true,
+      "noEmit": false,
+      "allowJs": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "moduleResolution": "node",
+      "strictPropertyInitialization": false,
+      "isolatedModules": true,
+      "jsx": "preserve",
+      "declaration": true,
+      "baseUrl": "./",
+      "outDir": "dist"
+    },
+    "exclude": [
+      "node_modules",
+      "tests",
+      "app",
+      "migrations",
+      "output",
+      "dapp",
+      "dist"
+    ],
+    "include": ["*.ts", "./**/*.ts"],
+    "paths": {
+      "@solana/spl-token": ["./node_modules/@solana/spl-token"]
+    }
+  }
+  

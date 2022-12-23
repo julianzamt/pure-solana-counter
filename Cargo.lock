@@ -721,8 +721,10 @@ dependencies = [
 name = "pure-solana-counter"
 version = "0.1.0"
 dependencies = [
+ "arrayref",
  "borsh",
  "solana-program",
+ "thiserror",
 ]
 
 [[package]]
