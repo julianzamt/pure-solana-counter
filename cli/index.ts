@@ -1,13 +1,8 @@
 import * as web3 from '@solana/web3.js';
 import * as borsh from 'borsh';
 
-const SECRET = [
-  48, 94, 163, 75, 125, 167, 37, 186, 99, 172, 218, 55, 115, 47, 207, 161, 225,
-  244, 13, 52, 186, 136, 56, 161, 12, 201, 131, 153, 35, 139, 105, 176, 204, 25,
-  224, 73, 185, 238, 107, 68, 240, 170, 192, 158, 58, 99, 193, 135, 163, 76,
-  243, 235, 147, 10, 7, 19, 45, 24, 159, 10, 148, 60, 249, 57,
-]; // cat ~/.config/solana/id.json (not safe don't share the key)
-const PROGRAMID = '3dpu1NMvUXoFyMA2zTrhWdj5grZdRKzCwBkfD9LPmtbJ'; // whatever you get after `solana program deploy target/deploy/scratch.so`
+const SECRET = []; // cat ~/.config/solana/id.json (not safe don't share the key)
+const PROGRAMID = ''; // whatever you get after `solana program deploy target/deploy/scratch.so`
 
 const conn = new web3.Connection('http://127.0.0.1:8899');
 const key: Uint8Array = Uint8Array.from(SECRET);
